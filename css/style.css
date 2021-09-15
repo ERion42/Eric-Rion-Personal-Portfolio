@@ -14,13 +14,21 @@
     border: 0;
     margin: 0;
     box-sizing: border-box;
+    color: var(--cDarker);
 }
 
 /* Format is fairly responsive, but a few media queries should tweak it for a few additional platforms */
+/* As page size shrinks, header values shrink and normal fonts grow */
 
 
+main {
+    padding-bottom: 35px;
+    font-size: 1.5rem;
+}
 
-
+h1 {
+    font-size: 2.5rem;
+}
 
 nav {
     height: 75px;
@@ -30,7 +38,7 @@ nav {
 
 nav p {
     float: left;
-    color: var(--cDarker);
+    color: var(--cDarkest);
     text-align: center;
     margin-top: 15px;
     padding: 0 30px 0 125px;
@@ -76,4 +84,73 @@ nav a:hover {
     right: 10px;
     color: var(--cLightBlue);
     background-color: var(--cDarkest);
+}
+
+/* Setting up columns here */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+}
+
+.col-1 {width: 8.33%;} 
+.col-2 {width: 16.66%;} 
+.col-3 {width: 25%;} 
+.col-4 {width: 33.33%;} 
+.col-5 {width: 41.66%;} 
+.col-6 {width: 50%;} 
+.col-7 {width: 58.33%;} 
+.col-8 {width: 66.66%;} 
+.col-9 {width: 75%;} 
+.col-10 {width: 83.33%;} 
+.col-11 {width: 91.66%;} 
+.col-12 {width: 100%;} 
+
+.row {
+    margin: 25px 0 0 25px;
+}
+
+.row p {
+    padding-bottom: 0;
+}
+
+
+.leftBox, #contactMe {
+    padding: 25px;
+    text-align: right;
+    color: var(--cDarker);
+}
+
+.rightBox {
+    padding: 25px ;
+    text-align: left;
+    border-right-style: none;
+    border-bottom-style:none;
+    border-top-style: none;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: var(--cDarker);    
+}
+
+.bottomLinx {
+    height: 100px;
+    border-right-style: none;
+    border-bottom-style:none;
+    border-top-style: none;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: var(--cDarker);
+    text-align: center;
+}
+
+.bottomLinx li {
+    list-style-type: none;
+    display: inline;
+    padding: 50px;
+    font-size: 1.5em;
 }
