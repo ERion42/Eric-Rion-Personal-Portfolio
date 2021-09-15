@@ -1,0 +1,79 @@
+/* Establish color scheme */
+:root {
+    --cLightest: #edeef7;
+    --cLightBlue: #81cece;
+    --cDarker: #3f587a;
+    --cDarkerBlue: #233d69;
+    --cDarkest: #30343e;
+
+
+}
+
+/* Set a few universal values to help with standardizing */
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Format is fairly responsive, but a few media queries should tweak it for a few additional platforms */
+
+
+
+
+
+nav {
+    height: 75px;
+    width: 100%;
+    background-color: var(--cDarkest);
+}
+
+nav p {
+    float: left;
+    color: var(--cDarker);
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 30px 0 125px;
+    font-size: 2.5rem;
+    background-color: var(--cLightBlue);
+
+}
+
+nav a {
+    padding: 25px 15px 0 15px;
+    margin: 0 10px 0 10px;
+    font-size: 1.5rem;
+    color: var(--cLightBlue);
+    text-decoration: none;
+    border-bottom-style:solid;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-width: 2px;
+    border-color: var(--cLightBlue);
+    float: right;
+    text-align: center;
+
+}
+
+nav a:hover {
+    border-bottom-style: none;
+}
+
+.headerImage {
+    background-image: url(../img/red_skyline.png);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.headerImage h2 {
+    position: absolute;
+    padding:10px;
+    top: 35%;
+    right: 10px;
+    color: var(--cLightBlue);
+    background-color: var(--cDarkest);
+}
