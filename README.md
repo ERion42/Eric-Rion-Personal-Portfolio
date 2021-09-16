@@ -29,3 +29,10 @@ If you think it should be scrapped and started over from scratch you could sugge
 ## Current iteration
 
 0.1  The html and CSS are present and mostly functional. Currently all project links are going to "www.google.com". More dedicated testing is needed.
+
+
+## Future Development Plans
+
+I need to add more interactivity to it. Making a more uniform experience for the user should be my next step, I think. 
+
+I need to make sure all hover effects are working the same across the elements.
