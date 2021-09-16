@@ -5,8 +5,6 @@
     --cDarker: #3f587a;
     --cDarkerBlue: #233d69;
     --cDarkest: #30343e;
-
-
 }
 
 /* Set a few universal values to help with standardizing */
@@ -118,8 +116,6 @@
     }
 }
 
-
-
 main {
     padding-bottom: 35px;
     font-size: 1.5rem;
@@ -143,7 +139,6 @@ nav p {
     padding: 0 30px 0 125px;
     font-size: 2.5rem;
     background-color: var(--cLightBlue);
-
 }
 
 nav a {
@@ -160,7 +155,6 @@ nav a {
     border-color: var(--cLightBlue);
     float: right;
     text-align: center;
-
 }
 
 nav a:hover {
@@ -197,6 +191,7 @@ nav a:hover {
     padding: 0px;
 }
 
+/* Column width is set here- this is where to look if it needs to be changed */
 .col-1 {width: 8.33%;} 
 .col-2 {width: 16.66%;} 
 .col-3 {width: 25%;} 
@@ -217,7 +212,6 @@ nav a:hover {
 .row p {
     padding-bottom: 0;
 }
-
 
 .leftBox {
     padding: 25px;
@@ -240,6 +234,8 @@ main p {
     padding: 15px !important;
 }
 
+
+/* Here's where a lot of the graphical adjustments are made */
 #selfPortrait {
     width: 30%;
     padding-left: 15px;
@@ -276,6 +272,7 @@ main p {
     position: relative;
 }
 
+/* Highlighted Text takes care of the text overlay for the portfolio gallery. */
 .highlightedText1 {
     position: absolute;
     z-index: 7;
@@ -293,7 +290,6 @@ main p {
     color: var(--cDarkerBlue);
     padding: 0 75px 0 15px;
 }
-
 
 .highlightedText2 {
     position: absolute;
@@ -313,7 +309,6 @@ main p {
     color: var(--cDarkerBlue);
     padding: 0 0 0 0;
 }
-
 
 .bottomLinx {
     height: 100px;
