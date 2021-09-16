@@ -20,6 +20,77 @@
 /* Format is fairly responsive, but a few media queries should tweak it for a few additional platforms */
 /* As page size shrinks, header values shrink and normal fonts grow */
 
+/* Minor cosmetic changes for Medium-windows and Tablets */
+@media only screen and (max-width: 1050px) {
+    .highlightedText1 h2 {
+        padding: 0 5px 0 15px !important;
+        font-size: 1.5rem;
+    }
+
+    .bottomLinx li {
+        padding: 25px !important;
+        font-size: 1.25rem !important;
+    }
+
+    nav a {
+        font-size: 1.25rem !important;
+    }
+
+    nav p {
+        padding: 0 25px 0 25px !important;
+    }
+
+    #bio, #works, #contact {
+        font-size: 1.75rem !important;
+    }
+}
+
+/* More drastic changes for small-windows and phones */
+@media only screen and (max-width: 699px) {
+    nav a {
+        font-size: 1rem !important;
+        margin: 5px !important;
+    }
+
+    .highlightedText1 h2 {
+        padding: 0 !important;
+        font-size: 1rem !important;
+    }
+
+    .highlightedText1 p {
+        padding: 0 !important;
+        font-size: 1rem !important;
+    }
+
+    .highlightedText2 {
+        font-size: 0.75rem !important;
+    }
+
+    #bio, #works,#contact {
+        font-size: 1.25rem !important;
+    }
+
+    .bottomLinx li {
+        padding: 10px !important;
+        font-size: 1rem !important;
+    }
+
+}
+
+/* The following settings should work for most phones */
+@media only screen and (max-width: 485px) {
+    #bio, #works, #contact {
+        font-size: 1rem !important;
+    }
+
+    .bottomLinx li {
+        padding: 0 0 10px 0 !important;
+        font-size: 1rem !important;
+        display: block !important;
+    }
+}
+
+
 
 main {
     padding-bottom: 35px;
@@ -120,7 +191,7 @@ nav a:hover {
 }
 
 
-.leftBox, #contactMe {
+.leftBox {
     padding: 25px;
     text-align: right;
     color: var(--cDarker);
@@ -136,6 +207,84 @@ nav a:hover {
     border-width: 5px;
     border-color: var(--cDarker);    
 }
+
+.rightBox p {
+    margin: 0px 5px 10x 5px;
+}
+
+#selfPortrait {
+    width: 30%;
+    float: right;
+}
+
+#wifeAndMe {
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.gallery {
+    border-right-style: none;
+    border-bottom-style:none;
+    border-top-style: none;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: var(--cDarker);    
+}
+
+.bigPic {
+    width: 90%;
+    padding: 0px;
+    margin: 0;
+    border: 5px solid var(--cLightBlue);
+    position: relative;
+}
+
+.smolPic {
+    width: 80%;
+    border: 5px solid var(--cLightBlue);
+    position: relative;
+}
+
+.highlightedText1 {
+    position: absolute;
+    z-index: 7;
+    padding-top: 25%;
+}
+
+.highlightedText1 h2 {
+    background-color: var(--cLightBlue);
+    color: var(--cDarker);
+    padding: 0 75px 0 15px;
+}
+
+.highlightedText1 p {
+    background-color: var(--cLightBlue);
+    color: var(--cDarkerBlue);
+    padding: 0 75px 0 15px;
+}
+
+
+.highlightedText2 {
+    position: absolute;
+    z-index: 7;
+    padding-top: 1%;
+    font-size: 1rem;
+}
+
+.highlightedText2 h2 {
+    background-color: var(--cLightBlue);
+    color: var(--cDarker);
+    padding-right: 15px;
+}
+
+.highlightedText2 p {
+    background-color: var(--cLightBlue);
+    color: var(--cDarkerBlue);
+    padding: 0 0 0 0;
+}
+
 
 .bottomLinx {
     height: 100px;
@@ -154,3 +303,4 @@ nav a:hover {
     padding: 50px;
     font-size: 1.5em;
 }
+
