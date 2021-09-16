@@ -49,7 +49,7 @@
 @media only screen and (max-width: 699px) {
     nav a {
         font-size: 1rem !important;
-        margin: 5px !important;
+        margin: 1px !important;
     }
 
     .highlightedText1 h2 {
@@ -78,9 +78,37 @@
 }
 
 /* The following settings should work for most phones */
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 565px) {
+    nav {
+        height: 125px !important;
+    }
+    
+    nav p {
+        margin: 0px !important;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 0.75rem !important;
+        display: inline-block !important;
+    }
+    
     #bio, #works, #contact {
         font-size: 1rem !important;
+    }
+
+    #selfPortrait {
+        width: 100% !important;
+        padding: 15px;
+    }
+
+    #wifeAndMe {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .highlightedText1,.highlightedText2 {
+        display: none;
     }
 
     .bottomLinx li {
@@ -208,12 +236,13 @@ nav a:hover {
     border-color: var(--cDarker);    
 }
 
-.rightBox p {
-    margin: 0px 5px 10x 5px;
+main p {
+    padding: 15px !important;
 }
 
 #selfPortrait {
     width: 30%;
+    padding-left: 15px;
     float: right;
 }
 
