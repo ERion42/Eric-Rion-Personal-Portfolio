@@ -4,6 +4,14 @@ In order to better market myself as a web developer I've created a landing page 
 
 Right now it's still in the early stages as I don't actually have a portfolio, but I'm working on that.
 
+## Screenshots
+
+### Start 
+![Imgur](https://i.imgur.com/Hg0rrbv.png)
+
+### End 
+![Imgur](https://i.imgur.com/UChoj3x.png)
+
 ## Installation
 
 This is just an HTML file, a CSS file, and a handful of image files. No installation is required.
